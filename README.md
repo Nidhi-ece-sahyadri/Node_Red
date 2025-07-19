@@ -44,7 +44,3 @@ Run the following command in your terminal:
 ```bash
 npm install node-red-dashboard
 ---
-
-
-
-
