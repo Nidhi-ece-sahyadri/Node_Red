@@ -1,5 +1,6 @@
-# Node_Red
-# 🌡️ ESP32 Temperature Monitor with Node-RED 
+## node red
+---
+# 🌡️ ESP32 Temperature Monitor with Node-RED (No MQTT)
 
 This project allows an **ESP32** to send temperature data to a **Node-RED** server using **HTTP POST** (not MQTT), and displays the data in real-time on a gauge dashboard.
 
@@ -33,14 +34,28 @@ This project allows an **ESP32** to send temperature data to a **Node-RED** serv
 - Then install Node-RED globally:
   ```bash
   npm install -g --unsafe-perm node-red
-  ---
-  
-### 📦 Install Node-RED Dashboard
-
-To enable the visual dashboard interface in Node-RED, you need to install the `node-red-dashboard` module.
-
-Run the following command in your terminal:
-
-```bash
-npm install node-red-dashboard
 ---
+## 2. Install Node-RED Dashboard
+- Run this command in your terminal:
+    ```bash
+   npm install node-red-dashboard
+  ---
+ ## 3. Start Node-RED
+- Start Node-RED by running:
+    ```bash
+   node-red
+- Then open the Node-RED editor in your browser:
+     ```bash
+  http://localhost:1880
+---
+  ## 📥 Node-RED Flow Setup
+📌 Flow Structure:
+ [POST /temperature]
+         ↓
+       [JSON]
+       ↙   ↓   ↘
+[Debug] [HTTP Response] [Gauge]
+ --
+ 
+
+  
