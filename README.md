@@ -51,13 +51,6 @@ This project allows an **ESP32** to send temperature data to a **Node-RED** serv
   ## 📥 Node-RED Flow Setup
 📌 Flow Structure:
 
-  - [POST /temperature]
- .
-         ↓
-       [JSON]
-    
-       ↙   ↓   ↘
-    
-[Debug] [HTTP Response] [Gauge]
+  <img width="1052" height="267" alt="Screenshot 2025-07-19 120543" src="https://github.com/user-attachments/assets/9bfb9a68-9fc0-4fd1-8015-123a07ae7eb2" />
 
   
